@@ -56,27 +56,29 @@ public class CasosDeTestesVersao2 {
     }
 
     @Test
-    public void TesteNumero4(){
+    public void TesteNumero4() throws InterruptedException{
 
         new robotVersao2()
                 .EscreverSenha()
                 .clicarNoBotaoLogin()
-                .verificarPopup();
+                .verificarPopup()
+                .sleep(3);
 
     }
 
     @Test
-    public void TesteNumero5(){
+    public void TesteNumero5() throws InterruptedException{
 
         new robotVersao2()
                 .EscreverEmail()
                 .EscreverSenha()
                 .clicarNoBotaoLogin()
-                .VerificarTituloTela2();
+                .VerificarTituloTela2()
+                .sleep(2);
     }
 
     @Test
-    public void TesteNumero6(){
+    public void TesteNumero6() throws InterruptedException{
 
         new robotVersao2()
                 .EscreverEmail()
@@ -87,7 +89,8 @@ public class CasosDeTestesVersao2 {
                 .verificarCampoLogin()
                 .verificarCampoSenha()
                 .verificarBotao()
-                .verificarElementoImagem();
+                .verificarElementoImagem()
+                .sleep(5);
     }
 
     @Test
